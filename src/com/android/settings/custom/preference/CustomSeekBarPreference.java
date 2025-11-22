@@ -32,7 +32,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.android.settings.R;
+import com.android.settings.custom.R;
 import com.android.settingslib.widget.SettingsThemeHelper;
 
 import com.google.android.material.slider.LabelFormatter;
@@ -174,7 +174,7 @@ public class CustomSeekBarPreference extends Preference implements Slider.OnChan
         }
 
         // Set up slider color
-        mSlider.setTrackActiveTintList(getContext().getColorStateList(
+        /*mSlider.setTrackActiveTintList(getContext().getColorStateList(
                 com.android.settingslib.widget.preference.slider.R.color
                 .settingslib_expressive_color_slider_track_active));
         mSlider.setTrackInactiveTintList(getContext().getColorStateList(
@@ -227,7 +227,7 @@ public class CustomSeekBarPreference extends Preference implements Slider.OnChan
             mSlider.setTickInactiveRadius(res.getDimensionPixelSize(
                     com.android.settingslib.widget.preference.slider.R
                     .dimen.settingslib_expressive_slider_tick_radius));
-        }
+        }*/
 
         mValueTextView = (TextView) holder.findViewById(R.id.value);
         mResetImageView = (ImageView) holder.findViewById(R.id.reset);
